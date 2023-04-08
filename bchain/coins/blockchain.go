@@ -36,6 +36,7 @@ import (
 	"github.com/trezor/blockbook/bchain/coins/koto"
 	"github.com/trezor/blockbook/bchain/coins/liquid"
 	"github.com/trezor/blockbook/bchain/coins/litecoin"
+	"github.com/trezor/blockbook/bchain/coins/mateable"
 	"github.com/trezor/blockbook/bchain/coins/monacoin"
 	"github.com/trezor/blockbook/bchain/coins/monetaryunit"
 	"github.com/trezor/blockbook/bchain/coins/myriad"
@@ -91,6 +92,8 @@ func init() {
 	BlockChainFactories["Koto Testnet"] = koto.NewKotoRPC
 	BlockChainFactories["Litecoin"] = litecoin.NewLitecoinRPC
 	BlockChainFactories["Litecoin Testnet"] = litecoin.NewLitecoinRPC
+	BlockChainFactories["Mateable"] = mateable.NewMateableRPC
+	BlockChainFactories["Mateable Testnet"] = mateable.NewMateableRPC
 	BlockChainFactories["Dogecoin"] = dogecoin.NewDogecoinRPC
 	BlockChainFactories["Dogecoin Testnet"] = dogecoin.NewDogecoinRPC
 	BlockChainFactories["Vertcoin"] = vertcoin.NewVertcoinRPC
